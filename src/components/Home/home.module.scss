@@ -1,0 +1,70 @@
+
+@keyframes example {
+    0%   { left:20px; }
+    // 50%  {left: 10px;}
+    100% {left:0px; }
+  }
+
+.home{
+    background:#c6ecee;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    .content{
+        align-self: center;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin-bottom: 30px;
+        &_profilePic{
+            position: relative;
+           
+            width: 270px;
+            height: 300px;
+            border-radius: 103px 103px 0 0;
+            border: 2px solid white;
+            object-fit: contain;
+            overflow: hidden;
+        }
+        &_profileName{
+
+            position: absolute;
+            width: 700px;
+            bottom: 0;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            // top:0;
+            // height: inherit;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            text-align: center;
+            // background-color: #0a0a0abf;
+            // background: linear-gradient(90deg, rgba(203,243,245,1) 25%, rgba(108,102,102,0.01724439775910369) 39%, rgba(145,156,157,1) 63%, rgba(203,243,245,1) 79%);
+            color: white;
+            // background: linear-gradient(90deg, rgba(198,236,238,0.022846638655462215) 20%, rgba(133,137,138,0.5382528011204482) 50%, rgba(198,236,238,0.03125) 82%);
+            // background: linear-gradient(90deg, rgba(198,236,238,0.022846638655462215) 20%, rgba(133,137,138,0.8631827731092436) 50%, rgba(198,236,238,0.03125) 82%);
+            background:  linear-gradient(90deg, rgba(198, 236, 238, 0.0228466387) 20%, rgb(0 0 0) 50%, rgba(198, 236, 238, 0.03125) 82%);
+        }
+    }
+    .hireMe{
+        align-self: center;
+    }
+    .skillsArrow{
+        position: absolute;
+        padding:50px;
+        
+        // transition: transform 0.3s ease-in-out;
+        // transform-origin: right;
+        animation: example 0.5s infinite alternate;
+        // animation-duration: 4s;
+    }
+   
+  
+    
+}

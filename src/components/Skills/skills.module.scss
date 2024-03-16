@@ -1,0 +1,40 @@
+// @keyframes skillsExpand{
+//     0%{
+//         width:30%;
+//         right:0;
+//     }
+//     25%{
+//         width:50%;
+        
+//     }
+//     50%{
+//         width:60%;
+        
+//     }
+//     75%{
+//         width:80%;
+        
+//     }
+//     100%{
+//         width:100%;
+        
+//     }
+// }
+.skills{
+    background:#c6ecee;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    // animation: skillsExpand 4s;
+    .skillsArrow{
+        position: absolute;
+        padding:50px;
+        right:0;
+        // transition: transform 0.3s ease-in-out;
+        // transform-origin: right;
+        animation: example 0.5s infinite alternate;
+        // animation-duration: 4s;
+    }
+}
